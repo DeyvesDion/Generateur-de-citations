@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <!--Fontawersome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Pacifico|Fredericka+the+Great|Raleway|Monoton" />
+    <!--Style-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Génerateur de citations</title>
+</head>
+
+<body>
+
+    <head>
+        <h1 class="banner">GENERATEUR DE CITATIONS</h1>
+    </head>
+        
+        <div class="container">
+        <div class="row auteurCitation">
+            <!--Auteur-->
+            <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <h2>Auteurs</h2>
+                <hr class="separator">
+                <div class="radio">
+                    <input type="radio" name="auteur" value="moliere" id="moliere">
+                    <label for="moliere">Molière</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="auteur" value="corneille" id="corneille">
+                    <label for="corneille">Corneille</label>
+                </div>
+            </article>
+            <!--Fin auteur-->
+            <!--Nombre de citation-->
+            <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <h2>Nombre de citation</h2>
+                <hr class="separator">
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="1" id="1">
+                    <label for="1">Un</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="2" id="2">
+                    <label for="2">Deux</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="3" id="3">
+                    <label for="3">Trois</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="4" id="4">
+                    <label for="4">Quatre</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nbCitations" value="5" id="5">
+                    <label for="5">Cinq</label>
+                </div>
+            </article>
+            <!--Fin nombre de citation-->
+        </div><br>
+        <button class="generer" onclick="generer()" title="Cliquer pour génerer">Génerer la citation</button>
+        <br><br>
+        <ol class="playCitation" id="playCitation"></ol>
+        <div class="nomAuteur" id="nomAuteur"></div>
+    </div>
+
+    <section class="container-fluid foot">
+        <div>
+            <div class="row">
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h2 class="underline">Génerateur de citations</h2>
+                    <h2 style="color: #c8a461">Molière - Corneille</h2>
+                </article><br><br><br><br><br>
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h2 class="underline">Réseaux sociaux</h2>
+                    <p>
+                        <a style="color: #c8a461; font-size: 50px;" href="#"><i
+                                class="fab fa-google-plus"></i></a>&nbsp;&nbsp;
+                        <a style="color: #c8a461; font-size: 50px;" href="#"><i
+                                class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+                        <a style="color: #c8a461; font-size: 50px;" href="#"><i
+                                class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                        <a style="color: #c8a461; font-size: 50px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <hr class="separator2">
+        <footer class="footer">&copy; Copyright 2019 - De Yves DION
+            <P>Site réalisé par De Yves DION dans le cadre du parcours Développeur d'applications Front-End d'OpenClassrooms.
+            </P>
+        </footer>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

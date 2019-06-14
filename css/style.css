@@ -1,0 +1,123 @@
+body{
+    font-family:"releway";
+    color: #000000;
+    background-color: #c8a461;
+}
+.banner{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Fredericka the Great";
+    text-transform: uppercase; 
+    margin-top: 50px;
+}
+.auteurCitation{
+  margin-top: 50px;
+}
+h2{
+  font-family: 'Pacifico', cursive;
+}
+.separator{
+	height: 3px;
+	width: 35%;
+	border: none;
+	box-shadow: none;
+  background-color:#000000;
+  margin-left: 1%;
+}
+.separator2{
+	height: 2px;
+	width: 80%;
+  margin-top: 10px;
+	border: none;
+	box-shadow: none;
+  background-color:#ffffff;
+}
+.container-fluid{
+  margin: 0px;
+}
+
+/* Début Bouton radio*/
+
+/* Masquer le bouton radio d'origine*/ 
+input[type=radio]{
+  display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+
+input[type=radio] + label:before {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-top: -3px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+
+input[type=radio]:checked + label:before {
+  background: #fb8819;
+  border-color: #fb8819;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+.element{
+  margin-bottom:14px;
+}
+label{
+  cursor:pointer;
+}
+
+/* Fin Bouton radio*/
+
+.nomAuteur{
+  color:#ffffff;
+  font-style: italic;
+}
+
+.generer{
+    margin-left: 25%;
+    width: 50%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+    background-color:#ffffff;
+    border: solid #000000;
+    border-radius: 25px;
+  }
+  .generer:hover {
+    background-color: #413d3d; 
+    color: #c8a461;
+  }
+  .generer:active{
+    outline: none;
+  }
+  .generer:focus{
+    outline: none;
+  }
+  .underline{
+      text-decoration: underline #ffffff;
+  }
+
+
+  /* Footer */
+
+.foot{
+  background-color: #000000;
+  color: #ffffff;
+}
+.foot article{
+  margin-top: 30px;
+}
+.footer{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.footer p{
+  font-size: 15px;
+  text-align: center;
+}
+ 
